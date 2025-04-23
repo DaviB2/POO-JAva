@@ -1,5 +1,7 @@
 package AutoMacqueen;
 
+import org.w3c.dom.ls.LSOutput;
+
 public class Veicu {
     private int quantidadeRodas;
     private String chassi;
