@@ -76,7 +76,26 @@ public class Main {
                     do {
                         opcao3 = menuCalculo();
 
-                        if (opcao3 < 0 || opcao3 > 3) {
+                        retornoCalculos(opcao3, forma);
+                    } while (opcao3 != 0);
+                    
+                    break;
+                }
+            }
+        }while (opcao != 0);
+    }
+    static public int menuCalculo(){
+        System.out.println("qual calculo deseja fazer?");
+        System.out.println(
+                "Opções: \n" +
+                        "0. Voltar\n" +
+                        "1. Perimetro\n" +
+                        "2. Area\n" +
+                        "3. Volume\n");
+        return sc.nextInt();
+    }
+    static public void retornoCalculos(){
+                                if (opcao3 < 0 || opcao3 > 3) {
                             System.out.println("Opção Inválida!");
                         }
 
@@ -94,19 +113,5 @@ public class Main {
                                 break;
                             }
                         }
-                    } while (opcao3 != 0);
-                }
-            }
-        }while (opcao != 0);
-    }
-    static public int menuCalculo(){
-        System.out.println("qual calculo deseja fazer?");
-        System.out.println(
-                "Opções: \n" +
-                        "0. Voltar\n" +
-                        "1. Perimetro\n" +
-                        "2. Area\n" +
-                        "3. Volume\n");
-        return sc.nextInt();
     }
 }
