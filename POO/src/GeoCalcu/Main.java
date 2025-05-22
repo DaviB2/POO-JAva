@@ -94,24 +94,24 @@ public class Main {
                         "3. Volume\n");
         return sc.nextInt();
     }
-    static public void retornoCalculos(){
-                                if (opcao3 < 0 || opcao3 > 3) {
-                            System.out.println("Opção Inválida!");
-                        }
+    static public void retornoCalculos(int opcao3, FormaGeometrica forma){
+        if (opcao3 < 0 || opcao3 > 3) {
+            System.out.println("Opção Inválida!");
+        }
 
-                        switch (opcao3) {
-                            case 1: {
-                                System.out.println("Largura: " + forma.calculaLargura());
-                                break;
-                            }
-                            case 2: {
-                                System.out.println("Altura: " + forma.calculaAltura());
-                                break;
-                            }
-                            case 3: {
-                                System.out.println("Comprimento: " + forma.calculaComprimento());
-                                break;
-                            }
-                        }
+        switch (opcao3) {
+            case 1: {
+                System.out.println("Largura: " + forma.calculaLargura());
+                break;
+            }
+            case 2: {
+                System.out.println("Altura: " + forma.calculaAltura());
+                break;
+            }
+            case 3: {
+                System.out.println("Comprimento: " + forma.calculaComprimento());
+                break;
+            }
+        }
     }
 }
