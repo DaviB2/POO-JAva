@@ -3,6 +3,9 @@ package AnimaisDeEstimacoes;
 public class Animal {
     public String nome;
     public int idade;
+    public abstract void som;
+    public abstract void comer;
+    public abstract void exibirInformacao;
 
     public Animal(String nome, int idade){
         this.nome = nome;
@@ -27,7 +30,4 @@ public class Animal {
         }
         this.idade = idade;
     }
-    public abstract void emitirSom();
-    public abstract void comer();
-    public abstract void exibirInformacoes();
 }
